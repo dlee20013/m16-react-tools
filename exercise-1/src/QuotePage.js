@@ -25,14 +25,9 @@ var QuotePage = React.createClass({
 		return (
 			<div className="quotePage">
 				<div>
-				{this.state.quotes.map(function(q, i){
-					{console.log("what am I?", q);}
-					return <Quote key={'quote-' + i} text={q.text} author={q.author} url={q.url}/>
-				})}
+					<p className="instructions">Iterate through <code>this.state.quotes</code>, and create a new <code>Quote</code> component for each one</p>
 				</div>
 			</div>
-
-	//you can only render one html statement at a time/ you wouldn't be able to put another div under the div.
 		);
 	}
 });
